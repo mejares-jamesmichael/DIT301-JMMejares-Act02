@@ -1,16 +1,11 @@
-# multihello
+# multihello | Mobile App Dev - Reflection
 
-A new Flutter project.
+1. What did you observe about the app lifecycle when switching between screens or minimizing the app?
 
-## Getting Started
+       My firsthand experience was when switching between screens, the previous screen remains in the widget tree but is not visible. The new screen is pushed onto the navigation stack. When the user navigates back, the current screen is popped from the stack and destroyed, and the previous screen becomes visible again.
 
-This project is a starting point for a Flutter application.
+        When minimizing the app, the app enters a paused state. When the user returns to the app, it enters a resumed state. The state of the widgets is preserved during this process. If the operating system terminates the app while it is in the background, the app will be restarted when the user returns, and the state will be lost unless it has been saved and restored.
 
-A few resources to get you started if this is your first Flutter project:
+2. What did you learn about activity management in Android?
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+        I learned the foundations of Android / Flutter App Development, We utilize the methods to manage the activity of an Android app. This is pretty handy and beneficial as I think it is crucial part of Android Optimization.
